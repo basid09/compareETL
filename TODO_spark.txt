@@ -1,0 +1,17 @@
+
+# 1 : when column names are different | map File ?
+    [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column or function parameter with name `<xyz>` cannot be resolved. Did you mean one of the following? [].
+
+# 2 : Results are returned as True or False. True --> Match & False --> Mismatch. The output should be DataFrame with 6 columns for comparison of 2 Dataframes.
+        Column 1 --> Unique Key
+        Column 2 --> Tuple : (Row Number in DF1, Row Number in DF2)
+        Column 3 --> Tuple : (Column Name in DF1,Column Name in DF2)
+        Column 4 --> Value of Mismatch in DF1
+        Column 5 --> Value of Mismatch in DF2
+        Column 6 --> Tolerance, (if column is date, Number, etc)
+
+# 3 : Settings file with compare tolerances defined as 'Relaxed', 'Strict' and 'Custom'. Commandline Overrides this setting
+
+# 4 : Can be run as a package from commandline mode or as a function call programatically.
+
+# 5 : Can compare only 2 Dfs, can we extend this to 3 Dfs?
